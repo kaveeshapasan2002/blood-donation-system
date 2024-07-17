@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>contact</title>
+    <link rel="stylesheet" href="styles/contactUs.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"
+      integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="banner">
+      <div class="navbar">
+        <img src="images/logo main.png" class="logo" />
+        <ul>
+          <li><a href="../HomePage/HomePage.html">Home</a></li>
+          <li><a href="../contact us/contactUs.html">Contact Us</a></li>
+          <li><a>Campaing</a>
+            <div class="sub-menu">
+              <ul>
+                <li><a href="../Campaing/camoaing.html">Info</a></li>
+                <li><a href="../Camping/contact.html">Organize</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="">Blood</a>
+            <div class="sub-menu">
+              <ul>
+                <li><a href="../../K/page1/page1.html">why</a></li>
+                <li><a href="../../K/page2/page2.html">types</a></li>
+                <li><a href="../../K/page3/page3.html">can</a></li>
+              </ul>
+            </div>
+          
+          </li>
+          <li>
+            <a href="#">About Us</a>
+            <div class="sub-menu">
+              <ul>
+                <li><a href="../AboutUs Sewmin/contact.html">Vision<pre>& Mission</a></li>
+                  <li><a href="../partnership/partnership.html">Sponsors</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="../blood requests/Blood request page.html">request</a></li>
+          <li><a>Contribute</a>
+            <div class="sub-menu">
+              <ul>
+                <li><a href="../../K/page1/page1.html">Donate</a></li>
+                <li><a href="../FundRaise/fund raise page.html">Raise a fund</a></li>
+              </ul>
+            </div>
+
+          </li>
+          <li><a href="../../O/where to give blood/whareToGiveBlood.html">blood center</a></li>
+         
+          <li>
+            <a href="#"><img src="images/login gray.png" class="login" /></a>
+            <div class="sub-men">
+              <ul>
+                <li><a href="#">Edit </a></li>
+                <li><a href="#">LogOut</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <!-- <img src="images/login gray.png" class="login" /> -->
+      </div>
+    </div>
+    <!-- end of yhe header -->
+
+    <section class="contact">
+      <div class="content">
+        <h2>Contact Us</h2>
+        <div class="box">
+        <p>
+          Contact us to contribute towards saving lives through our blood
+          donation system.<br />
+          Your inquiry or participation helps ensure a steady supply of blood
+          for those in need.<br />Reach out today to make a difference!?
+        </p>
+        </div>
+      </div>
+      <div class="container">
+        <div class="contactInfo">
+          <div class="box">
+            <div class="icon">
+              <i class="fa fa-globe"></i>
+            </div>
+            <div class="text">
+              <h3>Address</h3>
+              <p>123 Main Street,Cityville,State,Country</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="icon">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+            </div>
+            <div class="text">
+              <h3>Phone</h3>
+              <p>+94 875 675985</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="text">
+              <h3>Email</h3>
+              <p>blood-donationcomity@gmail.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="contactForm">
+
+          <form id="contactForm">
+            <h2>Send Message</h2>
+            <div class="inputbox">
+              <input type="text" name="" required="required" />
+              <span>Full Name</span>
+            </div>
+            <div class="inputbox">
+              <input type="email" name="" required="required" />
+              <span>Email</span>
+            </div>
+            <div class="inputbox">
+              <textarea name="" required="required"></textarea>
+              <span>Type Your Message</span>
+            </div>
+            <div class="inputbox">
+              <input type="submit" name="" value="Send" onclick="showConfirmation()" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script>
+      function showConfirmation(){
+        var confirmation = confirm("Are you ready to submit?");
+        if(confirmation){
+          document.getElementById("contactForm").submit();
+        }
+        else{
+          return false;
+        }
+      }
+
+    </script>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footerContainer">
+        <div class="row">
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#">about us</a></li>
+              <li><a href="#">our services</a></li>
+              <li><a href="#">privacy polcy</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Get help</h4>
+            <ul>
+              <li><a href="#">whatsapp</a></li>
+              <li><a href="#">facebook</a></li>
+              <li><a href="#">instagram</a></li>
+              <li><a href="#">imo</a></li>
+              <li><a href="#">twitter</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Learn</h4>
+            <ul>
+              <li><a href="#">Why Donate Blood</a></li>
+              <li><a href="#">Campaing</a></li>
+              <li><a href="#">Importance of Blood</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Contact Us</h4>
+            <div class="sociallinks">
+              <ul>
+                <li><a href="#">facebook</a></li>
+                <li><a href="#">instagram</a></li>
+                <li><a href="#">Whatsapp</a></li>
+                <li><a href="#">Twtter</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

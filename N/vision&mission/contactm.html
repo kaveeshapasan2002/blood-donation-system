@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vision & Mission</title>
+    <style>
+              /* start of the header css */
+      .banner {
+        width: 100%;
+        height: 30vh;
+        background-color: black;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+          url(images/kk.jpg);
+        background-size: cover;
+        background-position: center;
+      }
+      .navbar {
+        width: 85;
+        margin: auto;
+        padding: 35px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 30px;
+      }
+      .logo {
+        width: 120px;
+        cursor: pointer;
+      }
+      .navbar ul li {
+        list-style: none;
+        display: inline-block;
+        margin: 0 20px;
+        position: relative;
+        right: 5%;
+        bottom: 7px;
+      }
+      .navbar ul li a {
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+      }
+      .navbar ul li::after {
+        content: "";
+        height: 3px;
+        width: 0;
+        background: red;
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        transition: 0.5s;
+      }
+      .navbar ul li:hover:after {
+        width: 100%;
+      }
+      .sub-menu {
+        display: none;
+        position: relative;
+        top: 10px;
+        left: -15px;
+      }
+      .sub-menu ul li {
+        position: relative;
+        left: -5px;
+        margin-bottom: 10px;
+        top: 2px;
+      }
+      .sub-men ul li {
+        position: relative;
+        left: -5px;
+        bottom: 10px;
+        margin-bottom: 10px;
+        top: 1;
+      }
+      .sub-men {
+        display: none;
+        position: relative;
+        top: 80px;
+        right: 90px;
+      }
+      .banner ul li:hover .sub-men {
+        display: block;
+        position: absolute;
+        background-color: rgb(0, 45, 117);
+        margin-top: 12px;
+        margin-left: -8px;
+      }
+      .sub-menu ul,
+      .sub-men ul {
+        position: absolute;
+      }
+      .banner ul li:hover .sub-menu {
+        display: block;
+        position: absolute;
+        background-color: rgb(0, 45, 117);
+        margin-top: 12px;
+        margin-left: -8px;
+      }
+      .banner ul li:hover .sub-menu ul {
+        display: block;
+        margin: 6px;
+      }
+
+      .banner ul li:hover .sub-menu ul li a {
+        width: 75px;
+        padding: 5px;
+        border-bottom: 1px #fff;
+        background: transparent;
+        transition: 0.4 ease;
+        text-align: left;
+        border-radius: 0px;
+      }
+      .login-icon {
+        width: 40px;
+        border-radius: 100%;
+        cursor: pointer;
+        margin-right: 30px;
+      }
+      /* osh */
+      .login {
+        width: 70px;
+        border-radius: 100%;
+        cursor: pointer;
+        margin-right: 30px;
+      }
+
+      /* end of the header css */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .column {
+            flex: 0 0 45%;
+        }
+
+        .card {
+            background-color: #fff;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .container h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .container p {
+            text-align: justify;
+            color: #555;
+            font-size: 16px; /* Adjust font size as needed */
+            line-height: 1.5; /* Adjust line height as needed */
+        }
+
+        .container ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            color: #555;
+        }
+
+        .container img {
+            border-radius: 10px;
+        }
+                /*Fottetr*/
+        .footer {
+          background-color: gray;
+          padding: 70px 0;
+        }
+
+        .footerContainer {
+          max-width: 1170px;
+          margin: auto;
+        }
+        ul {
+          list-style: none;
+        }
+        .sociallinks ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+        }
+        .row {
+          display: flex;
+          flex-wrap: none;
+        }
+
+        .footer-col {
+          width: 25%;
+          padding: 0 15px;
+        }
+
+        .footer-col h4 {
+          font-size: 18px;
+          color: #ffffff;
+          text-transform: capitalize;
+          margin-bottom: 35px;
+          font-weight: 500;
+          position: relative;
+        }
+
+        .footer-col h4::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: -10px;
+          background-color: #e91e63;
+          height: 2px;
+          box-sizing: border-box;
+          width: 50px;
+        }
+
+        .footer-col ul li:not(:last-child) {
+          margin-bottom: 10px;
+        }
+
+        .footer-col ul li a {
+          font-size: 16px;
+          text-transform: capitalize;
+          color: #ffffff;
+          text-decoration: none;
+          font-weight: 300;
+          color: #bbbbbb;
+          display: block;
+          transition: all o.3s ease;
+        }
+
+        .footer-col ul li a:hover {
+          color: #ffffff;
+          padding-left: 8px;
+        }
+
+        .footer-col .sociallinks li a {
+          display: inline-block;
+          height: 40px;
+          width: 100px;
+          background-color: rgba(255, 255, 255, 0.2);
+          margin-right: 0 10px 10px 0;
+          text-align: center;
+          line-height: 40px;
+          border-radius: 10%;
+          color: blue;
+          transition: all 0.5s ease;
+        }
+
+        .footer-col .sociallinks a:hover {
+          color: black;
+          background-color: red;
+          width: 1px;
+        }
+        /*Responsive*/
+        @media (max-width: 767px) {
+          .footer-col {
+            width: 50%;
+            margin-bottom: 30px;
+          }
+        }
+
+        @media (max-width: 574px) {
+          .footer-col {
+            width: 100%;
+          }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="banner">
+        <div class="navbar">
+          <img src="images/logo main.png" class="logo" />
+          <ul>
+            <li><a href="../HomePage/HomePage.html">Home</a></li>
+            <li><a href="../contact us/contactUs.html">Contact Us</a></li>
+            <li><a href="../Campaing/camoaing.html">Campaing</a></li>
+            <li><a href="">Blood</a>
+              <div class="sub-menu">
+                <ul>
+                  <li><a href="../../K/page1/page1.html">why</a></li>
+                  <li><a href="../../K/page2/page2.html">types</a></li>
+                  <li><a href="../../K/page3/page3.html">can</a></li>
+                </ul>
+              </div>
+            
+            </li>
+            <li>
+              <a href="#">About Us</a>
+              <div class="sub-menu">
+                <ul>
+                  <li><a href="contactm.html">Vision<pre>& Mission</a></li>
+                  
+                </ul>
+              </div>
+            </li>
+            <li><a href="../Campaing/camoaing.html">request</a></li>
+            <li><a href="../FundRaise/fund raise page.html">donate</a></li>
+            <li><a href="../../O/where to give blood/whareToGiveBlood.html">blood center</a></li>
+           
+            <li>
+              <a href="#"><img src="images/login gray.png" class="login" /></a>
+              <div class="sub-men">
+                <ul>
+                  <li><a href="#">Edit </a></li>
+                  <li><a href="#">LogOut</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <!-- <img src="images/login gray.png" class="login" /> -->
+        </div>
+      </div>
+      <!-- end of the header -->
+
+
+    <div class="container">
+        <h2 style="text-align:center">Vision & Mission</h2>
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <center><img src="./images/vission.jpg" alt="Vision" style="width:70%"></center>
+                    <div class="container">
+                        <center><h2>Vision</h2></center>
+                        <p>To create a community where every individual recognizes the value of their blood and actively participates in sustaining a robust blood donation system, ensuring the availability of safe blood for all in need.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <center><img src="./images/mission.jpg" alt="Mission" style="width:65%"></center>
+                    <div class="container">
+                        <center><h2>Mission</h2></center>
+                        <p>Our mission is to establish an accessible, efficient, and sustainable blood donation system by:</p>
+                        <ul>
+                            <li>Educating the community about the importance and impact of blood donation on saving lives.</li>
+                            <li>Fostering a culture of regular blood donation through awareness campaigns and outreach programs.</li>
+                            <li>Collaborating with healthcare institutions, government agencies, and community organizations to streamline the blood donation process.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footerContainer">
+          <div class="row">
+            <div class="footer-col">
+              <h4>Company</h4>
+              <ul>
+                <li><a href="#">about us</a></li>
+                <li><a href="#">our services</a></li>
+                <li><a href="#">privacy polcy</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Get help</h4>
+              <ul>
+                <li><a href="#">whatsapp</a></li>
+                <li><a href="#">facebook</a></li>
+                <li><a href="#">instagram</a></li>
+                <li><a href="#">imo</a></li>
+                <li><a href="#">twitter</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Learn</h4>
+              <ul>
+                <li><a href="#">Why Donate Blood</a></li>
+                <li><a href="#">Campaing</a></li>
+                <li><a href="#">Importance of Blood</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Contact Us</h4>
+              <div class="sociallinks">
+                <ul>
+                  <li><a href="#">facebook</a></li>
+                  <li><a href="#">instagram</a></li>
+                  <li><a href="#">Whatsapp</a></li>
+                  <li><a href="#">Twtter</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+
+</body>
+</html>
